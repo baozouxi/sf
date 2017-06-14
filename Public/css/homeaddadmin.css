@@ -1,0 +1,7 @@
+.form_con .addForm .fields ul li{
+	width: 24.5%;
+}
+
+.form_con .addForm .fields ul.input li.add span{
+	margin-left: 73px;
+}

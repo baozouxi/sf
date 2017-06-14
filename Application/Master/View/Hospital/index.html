@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/com.css">
+    <!-- <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/index.css"> -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/date_input.css">
+    <!-- <link rel="stylesheet" href="css/info.css"> -->
+    <link rel="stylesheet" href="__PUBLIC__/css/addPatient.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/adminHospitalList.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/jquery.mCustomScrollbar.min.css">
+    <script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery.mCustomScrollbar.js"></script>
+   <!--  <script type="text/javascript" src='js/jquery.min.js'></script> -->
+    <script type="text/javascript" src='__PUBLIC__/js/jquery.date_input.pack.js'></script>
+    <script type="text/javascript" src="__PUBLIC__/js/com.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/addPatient.js"></script>
+	
+    <title>管理首页</title>
+	<script type="text/javascript"> 
+		$(function(){
+
+			$('input[name=sort]').change(function(){
+				if($(this).val == '') return;
+				var id = $(this).attr('data-id');
+				$.post("{:U('Hospital/updateSort')}", {sort:$(this).val(), id:id}, null, 'json').fail(function(xhr){
+					tips('修改失败');
+				}).done(function(data){
+					tips('修改成功');
+					setTimeout(function(){
+						window.location.reload();
+					},1500);
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+    <div id="body_wrap">
+    <!-- 提示框 -->
+    <div class="sys_msg_tips"></div>
+        <!--头部-->
+         <include file="Common:head" />
+
+        <!-- 主体 -->
+        <div id="con">
+            <div class="wrap">
+            <!--导航栏部分-->
+                <include file="Common:menu" />
+
+                <!--显示表单部分-->
+                <div class="form">
+                    <div class="title">
+                        <div class="left"><a href="/Master/Index/index" title='点我返回首页'>返回首页</a></div>
+
+                    </div>
+
+                    <!--左侧导航隐藏按钮-->
+                    <div class="_button">
+                        <div class="hide"></div>
+                    </div>  
+                <form action="{:U('addPatient')}" method="post" name="add">                    <!--内容主体-->
+                    <div class="form_con">
+                        <div class="addForm">
+                            <div class="fields">
+                              <ul>
+                                <li>添加日期</li>
+                                <li>医院名称</li>
+                                <li>剩余金额</li>
+                                <li>目前比例</li>
+                                <li>已提取金额</li>
+                                <li>当前状态</li>
+                                <li>优先度</li>
+                              </ul>
+                              <volist name='hospitalList' id='hospital'>
+                                    <ul class="input">
+                                        <input type="hidden" name="unique" value="{$add_form_unique}">
+                                        <li>{$hospital.add_datetime}</li>
+                                        <li><a href="/Master/Hospital/info/id/{$hospital.id}">{$hospital.name}</a></li>
+                                        <li>{$hospital.leav}</li>
+                                        <li>{$hospital['percent'] * 100}%</li>
+                                        <li>{$hospital['cost_sum']}</li>
+                                     
+                                        <li>{$hospital['is_use'] ? '合作中' : '结束合作'  }</li>
+										 <li><input type="text" value="{$hospital['sort']}" data-id={$hospital['id']} name="sort"  style="text-align:center;"></li>
+                                    </ul>
+                              </volist>
+                              
+                            </div>
+                        </div>
+
+                    </div>
+
+                      
+                </form>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!--导航栏部分-->
+                <div class="main_nav">
+
+                     <volist name='menu' id='menu_item'>
+                        <div class="nav_item">
+                            <p>{$key}</p>
+                            <ul>
+                                <volist name='menu_item' id='menu_url'>    
+                                    <a href="{$menu_url}"><li>{$key}</li></a>
+                                </volist>
+                            </ul>
+                        </div>
+                    </volist>
+                    <div class="nav_item">
+                        <a href="/Home/Login/logout"><p>退出登录</p></a>
+                    </div>
+                </div>

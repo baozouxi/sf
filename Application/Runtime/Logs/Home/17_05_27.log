@@ -1,0 +1,480 @@
+[ 2017-05-27T08:57:46+08:00 ] 118.116.83.42 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-05-27T10:37:08+08:00 ] 118.116.83.42 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-27T10:37:08+08:00 ] 118.116.83.42 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-27T14:10:40+08:00 ] 110.184.62.139 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-27T14:10:40+08:00 ] 110.184.62.139 /Home/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-05-27T14:10:43+08:00 ] 110.184.62.139 /index.php/Home/Login/checkUser.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `hospital_admin` [ RunTime:0.0313s ]
+NOTIC: [8] Use of undefined constant tel - assumed 'tel' D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\LoginController.class.php 第 61 行.
+SQL: SELECT * FROM `hospital_admin` WHERE `tel` = '13228595558' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: errMsg D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\LoginController.class.php 第 71 行.
+
+[ 2017-05-27T14:10:49+08:00 ] 110.184.62.139 /index.php/Home/Login/sendVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hospital_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `verify_record` [ RunTime:0.0313s ]
+SQL: SELECT * FROM `hospital_admin` LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `verify_record` (`name`,`hospital_id`,`login_ip`) VALUES ('张三','13','110.184.62.139') [ RunTime:0.0469s ]
+
+[ 2017-05-27T14:10:55+08:00 ] 110.184.62.139 /index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hospital_admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `hospital_admin` WHERE `tel` = '13228595558' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `hospital_admin` SET `last_login_ip`='110.184.62.139',`last_login_date`='1495865455' WHERE `id` = 14 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-27T14:10:57+08:00 ] 110.184.62.139 /Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0469s ]
+SQL: SHOW COLUMNS FROM `proportion` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `rechange` [ RunTime:0.0313s ]
+SQL: SELECT sum(money) as sum FROM `rechange` WHERE `hospital_id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select p.percent,p.is_use,p.id,sum(s.cost_money) as cost_sum from proportion p join spending s on p.id=s.percentId where p.hospital_id=15 group by p.id; [ RunTime:0.0000s ]
+SQL: SELECT * FROM `hospital` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sum D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\IndexController.class.php 第 24 行.
+SQL: SELECT * FROM `spending` WHERE `hospital_id` = '15' AND `spending_date` BETWEEN '2017-05-01' AND '2017-05-31'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: sum_money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\IndexController.class.php 第 40 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-27T14:11:04+08:00 ] 110.184.62.139 /Home/Patient/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `doctor` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `illness` [ RunTime:0.0313s ]
+SQL: SELECT * FROM `doctor` WHERE `hospital_id` = 15  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `illness` WHERE `hospital_id` = 15  [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-27T14:11:21+08:00 ] 110.184.62.139 /Home/Patient/addPatient
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `patient` [ RunTime:0.0469s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `proportion` [ RunTime:0.0156s ]
+SQL: SELECT `id` FROM `proportion` WHERE `hospital_id` = 15 AND `is_use` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `patient` WHERE `hospital_id` = 15 AND `tel` IN ('13228595556') LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `patient` (`hospital_date`,`name`,`age`,`sex`,`illness`,`tel`,`hospital_id`,`doctor_name`) VALUES ('2017-05-19','sadas','13','男','sadas','13228595556','15','sadasdas') [ RunTime:0.0313s ]
+SQL: INSERT INTO `spending` (`hospital_id`,`patient_name`,`patient_tel`,`percentId`,`spending_date`) VALUES ('15','sadas','13228595556','65','2017-05-1'),('15','sadas','13228595556','65','2017-05-2'),('15','sadas','13228595556','65','2017-05-3'),('15','sadas','13228595556','65','2017-05-4'),('15','sadas','13228595556','65','2017-05-5'),('15','sadas','13228595556','65','2017-05-6'),('15','sadas','13228595556','65','2017-05-7'),('15','sadas','13228595556','65','2017-05-8'),('15','sadas','13228595556','65','2017-05-9'),('15','sadas','13228595556','65','2017-05-10'),('15','sadas','13228595556','65','2017-05-11'),('15','sadas','13228595556','65','2017-05-12'),('15','sadas','13228595556','65','2017-05-13'),('15','sadas','13228595556','65','2017-05-14'),('15','sadas','13228595556','65','2017-05-15'),('15','sadas','13228595556','65','2017-05-16'),('15','sadas','13228595556','65','2017-05-17'),('15','sadas','13228595556','65','2017-05-18'),('15','sadas','13228595556','65','2017-05-19'),('15','sadas','13228595556','65','2017-05-20'),('15','sadas','13228595556','65','2017-05-21'),('15','sadas','13228595556','65','2017-05-22'),('15','sadas','13228595556','65','2017-05-23'),('15','sadas','13228595556','65','2017-05-24'),('15','sadas','13228595556','65','2017-05-25'),('15','sadas','13228595556','65','2017-05-26'),('15','sadas','13228595556','65','2017-05-27'),('15','sadas','13228595556','65','2017-05-28'),('15','sadas','13228595556','65','2017-05-29'),('15','sadas','13228595556','65','2017-05-30'),('15','sadas','13228595556','65','2017-05-31') [ RunTime:0.0469s ]
+SQL: SELECT * FROM `spending` WHERE `hospital_id` = 15 AND `spending_date` BETWEEN '2017-06-01' AND '2017-06-30' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `spending` (`hospital_id`,`patient_name`,`patient_tel`,`percentId`,`spending_date`) VALUES ('15','sadas','13228595556','65','2017-06-1'),('15','sadas','13228595556','65','2017-06-2'),('15','sadas','13228595556','65','2017-06-3'),('15','sadas','13228595556','65','2017-06-4'),('15','sadas','13228595556','65','2017-06-5'),('15','sadas','13228595556','65','2017-06-6'),('15','sadas','13228595556','65','2017-06-7'),('15','sadas','13228595556','65','2017-06-8'),('15','sadas','13228595556','65','2017-06-9'),('15','sadas','13228595556','65','2017-06-10'),('15','sadas','13228595556','65','2017-06-11'),('15','sadas','13228595556','65','2017-06-12'),('15','sadas','13228595556','65','2017-06-13'),('15','sadas','13228595556','65','2017-06-14'),('15','sadas','13228595556','65','2017-06-15'),('15','sadas','13228595556','65','2017-06-16'),('15','sadas','13228595556','65','2017-06-17'),('15','sadas','13228595556','65','2017-06-18'),('15','sadas','13228595556','65','2017-06-19'),('15','sadas','13228595556','65','2017-06-20'),('15','sadas','13228595556','65','2017-06-21'),('15','sadas','13228595556','65','2017-06-22'),('15','sadas','13228595556','65','2017-06-23'),('15','sadas','13228595556','65','2017-06-24'),('15','sadas','13228595556','65','2017-06-25'),('15','sadas','13228595556','65','2017-06-26'),('15','sadas','13228595556','65','2017-06-27'),('15','sadas','13228595556','65','2017-06-28'),('15','sadas','13228595556','65','2017-06-29'),('15','sadas','13228595556','65','2017-06-30') [ RunTime:0.0625s ]
+
+[ 2017-05-27T14:11:25+08:00 ] 110.184.62.139 /Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `proportion` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `rechange` [ RunTime:0.0000s ]
+SQL: SELECT sum(money) as sum FROM `rechange` WHERE `hospital_id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select p.percent,p.is_use,p.id,sum(s.cost_money) as cost_sum from proportion p join spending s on p.id=s.percentId where p.hospital_id=15 group by p.id; [ RunTime:0.0000s ]
+SQL: SELECT * FROM `hospital` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sum D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\IndexController.class.php 第 24 行.
+SQL: SELECT * FROM `spending` WHERE `hospital_id` = '15' AND `spending_date` BETWEEN '2017-05-01' AND '2017-05-31'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: sum_money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\IndexController.class.php 第 40 行.
+NOTIC: [8] Undefined index: sum_money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\IndexController.class.php 第 40 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-27T14:11:26+08:00 ] 110.184.62.139 /Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `proportion` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `rechange` [ RunTime:0.0000s ]
+SQL: SELECT sum(money) as sum FROM `rechange` WHERE `hospital_id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select p.percent,p.is_use,p.id,sum(s.cost_money) as cost_sum from proportion p join spending s on p.id=s.percentId where p.hospital_id=15 group by p.id; [ RunTime:0.0000s ]
+SQL: SELECT * FROM `hospital` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: sum D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\IndexController.class.php 第 24 行.
+SQL: SELECT * FROM `spending` WHERE `hospital_id` = '15' AND `spending_date` BETWEEN '2017-05-01' AND '2017-05-31'  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: sum_money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\IndexController.class.php 第 40 行.
+NOTIC: [8] Undefined index: sum_money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\IndexController.class.php 第 40 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-27T14:11:28+08:00 ] 110.184.62.139 /Home/Spending/totalMonth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `spending` INNER JOIN patient ON patient_tel = patient.tel  WHERE patient.hospital_id = '15' AND `spending_date` BETWEEN '2017-05-01' AND '2017-05-31'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: 总额 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: 消费总额 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: 日期 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-01 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 病种 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: 撒大师 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: 2017-05-02 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-03 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-04 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-05 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-06 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-07 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-08 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-09 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-10 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-11 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-12 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-13 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-14 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-15 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-16 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-17 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-18 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-19 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-20 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-21 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-22 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-23 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-24 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-25 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-26 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-27 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-28 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-29 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-30 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-05-31 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: sadas D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 293 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 82 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\aaad9bdae453e486c54fd3edd97a79c0.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-27T14:11:30+08:00 ] 110.184.62.139 /Home/Spending/totalDay
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `spending` INNER JOIN patient ON patient.tel = patient_tel  WHERE patient.hospital_id = '15' AND `spending_date` = '2017-05-27'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: 总额 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 248 行.
+NOTIC: [8] Undefined index: 消费总额 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 248 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 248 行.
+NOTIC: [8] Undefined variable: cost D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 257 行.
+NOTIC: [2] max(): When only one parameter is given, it must be an array D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 257 行.
+NOTIC: [8] Undefined variable: cost D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 258 行.
+NOTIC: [2] min(): When only one parameter is given, it must be an array D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 258 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\faffcf93552ce242854947e113baf87b.php 第 84 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\faffcf93552ce242854947e113baf87b.php 第 87 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\faffcf93552ce242854947e113baf87b.php 第 84 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\faffcf93552ce242854947e113baf87b.php 第 87 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\faffcf93552ce242854947e113baf87b.php 第 84 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\faffcf93552ce242854947e113baf87b.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-27T14:11:30+08:00 ] 110.184.62.139 /Home/Spending/totalYear
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `spending` WHERE `hospital_id` = 15 AND `spending_date` BETWEEN '2017-01-01' AND '2017-12-31'  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: 总额 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 消费总额 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 214 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 月份 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 215 行.
+NOTIC: [8] Undefined index: 2017-05 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 215 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 215 行.
+NOTIC: [8] Undefined index: 2017-06 D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 215 行.
+NOTIC: [8] Undefined index: money D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 215 行.
+NOTIC: [8] Undefined index: month D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 220 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wwwroot\sfwhlryy\wwwroot\Application\Home\Controller\SpendingController.class.php 第 220 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\4f7ab238199761c07c95f62d45284cca.php 第 83 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\4f7ab238199761c07c95f62d45284cca.php 第 83 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\4f7ab238199761c07c95f62d45284cca.php 第 86 行.
+NOTIC: [2] Division by zero D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\4f7ab238199761c07c95f62d45284cca.php 第 83 行.
+NOTIC: [8] Undefined index: count D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Home\4f7ab238199761c07c95f62d45284cca.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-27T22:30:51+08:00 ] 118.116.83.42 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-27T22:30:51+08:00 ] 118.116.83.42 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+

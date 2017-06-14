@@ -1,0 +1,113 @@
+#con .form .form_con{
+    min-height: 300px;
+}
+
+
+
+.user_info{
+    width: 100%;
+    height: 50px;
+}
+
+.user_info .feilds{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+/*变长后*/
+
+
+.user_info .fields ul li{
+    float: left;
+    width: 10%;
+    height: 25px;
+    line-height: 25px;
+    background: #A7AFC0;
+    border: 1px solid #BCBCBC;
+    text-align: center;
+}
+
+.user_info .fields ul li.type{
+    width: 18%;
+}
+
+.user_info .fields ul.patient li{
+    background: #fff;
+}
+.user_info .fields ul.patient li.type_select{
+    display: none;
+    width:18%;
+}
+
+.user_info .fields ul.patient li.doctor_select{
+    display:none;
+}
+
+.user_info .fields ul.patient li input{
+    border:0px solid #bcbcbc;
+    outline: none;
+    width: 86%;
+    text-align:center;
+}
+
+.cost_info .fields ul li{
+    float: left;
+    width: 12.25%;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    background: #A7AFC0;
+    border: 1px solid #BCBCBC;
+}
+
+.cost_info .fields ul li.remark{
+    width: 16.5%;
+}
+
+.cost_info .fields ul li.money{
+    width: 8%;
+}
+
+
+.cost_info .fields ul.cost{
+    float:left;
+    overflow: hidden;
+    width: 49.75%;
+}
+
+.cost_info .fields ul.cost li{
+    width: 24.62%;
+    background: #fff;
+}
+
+.cost_info .fields ul.cost li.money{
+    width: 16.1%;
+}
+
+.cost_info .fields ul.cost li.remark{
+    width: 33.12%;
+}
+
+.cost_info .long ul.cost{
+    width: 49.65%;
+}
+.cost_info .long  ul.cost li{
+    width: 24.68%;
+}
+.cost_info .fields  ul.cost li input{
+    border:0px solid #bcbcbc;
+    outline: 0px;
+    width: 90%;
+}
+
+.add_admin p select{
+	width: 225px;
+text-align: center;
+border: 0px solid red;
+background: #c6cad6;
+padding: 5px 0px;
+color: #fff;
+font-size: 16px;
+}

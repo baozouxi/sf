@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/com.css">
+    <!-- <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/index.css"> -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/date_input.css">
+    <!-- <link rel="stylesheet" href="css/info.css"> -->
+    <link rel="stylesheet" href="__PUBLIC__/css/totalMonth.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/style.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/jquery.mCustomScrollbar.min.css">
+    <script type="text/javascript" src='__PUBLIC__/js/jquery.min.js'></script>
+    <script type="text/javascript" src='__PUBLIC__/js/WdatePicker.js'></script>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src='__PUBLIC__/js/jquery.date_input.pack.js'></script>
+    <script type="text/javascript" src="__PUBLIC__/js/com.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/addPatient.js"></script>
+    <title>管理首页</title>
+</head>
+<body>
+    <div id="body_wrap">
+    <!-- 提示框 -->
+    <div class="sys_msg_tips"></div>
+        <!--头部-->
+        <include file="Common:head" />
+
+        <!-- 主体 -->
+        <div id="con">
+            <div class="wrap">
+            <!--导航栏部分-->
+                <include file="Common:menu" />
+
+                <!--显示表单部分-->
+                <div class="form">
+                    <div class="title">
+                        <div class="left">医院名称：<a href="/" title='点我返回首页'>{$hospital_name}</a></div>
+                        <div class="right">
+                        
+                            <!-- <div class="word">搜索病人：</div>
+                            <div class="input search">
+                                <input value="" type="text" maxlength="5">
+                                <span class="search_button"></span>
+                            </div> -->
+                            <div class="word">选择月份：</div>
+                            
+                            <div class="input">
+                                <form action="?" method="GET">
+                                    <input value="{$date}" name='date' type="text" class="date_input" onclick="WdatePicker()">
+                                    <input type="submit" value="查看">
+                                 </form>    
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--左侧导航隐藏按钮-->
+                    <div class="_button">
+                        <div class="hide"></div>
+                    </div>  
+                    <div class="totalImg">
+                        <h1 style="text-align: center;padding: 20px 0px;">{$date}月消费情况</h1>
+        
+                        <volist name='list_data' key='a' id='item'>
+                            <div style="width:100%; text-align: center;font-size: 15px;font-weight: bold; margin: 10px 0px;">---------{$key}-------------</div>
+                            <foreach  name='item' key='k' item='_item'>
+                                <div class="skillbar clearfix " data-percent="{$_item['money']/$total*100}%">
+                                    <div class="skillbar-title" style="background: {$color[$a]};"><span>{$k}</span></div>
+                                    <div class="skillbar-bar" style="background: {$color[$a]};"></div>
+                                    <div class="skill-bar-percent">{$_item.money}元({$_item['count']}人)</div>
+                                </div> <!-- End Skill Bar -->
+                            </foreach>
+                        </volist>
+
+                        <div style="text-align:center;clear:both;">
+                        </div>
+
+                          <!-- <script src='js/jquery.js'></script> -->
+
+                          <script src="__PUBLIC__/js/index2.js"></script>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html> 

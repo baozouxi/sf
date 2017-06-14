@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/com.css">
+    <!-- <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/index.css"> -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/date_input.css">
+    <!-- <link rel="stylesheet" href="css/info.css"> -->
+    <link rel="stylesheet" href="__PUBLIC__/css/addPatient.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/adminList.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/jquery.mCustomScrollbar.min.css">
+    <script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery.mCustomScrollbar.js"></script>
+   <!--  <script type="text/javascript" src='js/jquery.min.js'></script> -->
+    <script type="text/javascript" src='__PUBLIC__/js/jquery.date_input.pack.js'></script>
+    <script type="text/javascript" src="__PUBLIC__/js/com.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/adminList.js"></script>
+    <script type="text/javascript">
+        var unique = '{$unique}';
+    </script>
+    <title>管理首页</title>
+</head>
+<body>
+    <div id="body_wrap">
+    <!-- 提示框 -->
+    <div class="sys_msg_tips"></div>
+        <!--头部-->
+        <include file="Common:head" />
+
+        <!-- 主体 -->
+        <div id="con">
+            <div class="wrap">
+            <!--导航栏部分-->
+                <include file="Common:menu" />
+
+                <!--显示表单部分-->
+                <div class="form">
+                    <div class="title">
+                        <div class="left"><a href="/Master/Index/index" title='点我返回首页'>返回首页</a></div>
+                    </div>
+
+                    <!--左侧导航隐藏按钮-->
+                    <div class="_button">
+                        <div class="hide"></div>
+                    </div>  
+
+                    <!--内容主体-->
+                    <div class="form_con">
+                        <div class="addForm">
+                            <div class="fields">
+                              <ul>
+                                <li>姓名</li>
+                                <li>用户名</li>
+                                <li>电话</li>
+                                <li>上次登录ip</li>
+                                <li>上次登录时间</li>
+                                <li>操作权限</li>
+                                <li>操作</li>
+                              </ul>
+
+                              <volist name='admin_list' id='admin' key='admin_num'>
+                                    <ul class="input">
+                                        <li>{$admin.name}</li>
+                                        <li>{$admin.username}</li>
+                                        <li>{$admin.tel}</li>
+                                        <li>{$admin.last_login_ip}</li>
+                                        <li>{$admin.last_login_time}</li>
+                                        <if condition="$admin_status elt 1">
+
+                                            <li>{$admin['admin_part'] < 1 ? '普通' : '管理员'  }</li>
+                                            <li>无</li>
+
+                                        <else />
+                                            <li>
+                                                <select name="admin_part" data-id={$admin.id} >
+                                                    <foreach name='admin_part_list' item='item' key="part">
+                                                        <option value="{$part}" {$part == $admin['admin_part'] ? 'selected="selected"' :'' }  >{$item}</option>
+                                                    </foreach>
+                                                </select>
+                                            </li>
+                                        </if>
+                                            <if condition="$admin['is_use'] eq 0 ">
+                                                <li><span>冻结</span>
+                                                    <a href="/Master/Admin/access/unique/{$unique}/do/jiedong/id/{$admin.id}"><span>解冻</span></a> 
+                                                    <a href="/Master/Admin/resetPass/unique/{$unique}/id/{$admin.id}"><span>重置密码</span></a>
+                                                </li>
+                                            <else />
+                                                <li><a href="/Master/Admin/access/unique/{$unique}/do/dongjie/id/{$admin.id}"><span>冻结</span></a> 
+                                                   <span>解冻</span>
+                                                    <a href="/Master/Admin/resetPass/unique/{$unique}/id/{$admin.id}"><span>重置密码</span></a>
+                                                </li>
+                                            </if>
+                                        
+                                    </ul>
+                              </volist>
+                              
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

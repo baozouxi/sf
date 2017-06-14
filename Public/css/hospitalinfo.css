@@ -1,0 +1,178 @@
+
+.user_info .fields ul li{
+    width:12.3%;
+}
+
+#con .cost_info .fields ul li.title{
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    margin-top:10px;
+    clear: both;
+}
+
+
+
+#con .cost_info .fields ul.list{
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+}
+
+#con .cost_info .fields ul li{
+    width:12.3%;
+}
+
+
+#con .cost_info .fields ul.pro li{
+    width:19.8%;
+}
+
+#con .cost_info .fields ul.proportion li{
+    background-color: #fff;
+    border:1px solid #BCBCBC;
+}
+
+#con .cost_info .fields ul.proportion li.empty{
+    width: 100%;
+    
+}
+
+#con .cost_info .fields ul.do li{
+    margin-left: 10px;
+}
+
+#con .cost_info .fields ul.do li:hover{
+    color: red;
+}
+
+#con .cost_info .fields .rechange li{
+    width: 33.1%;
+}
+
+#con .cost_info .fields ul.member li{
+    width: 24.8%;
+}
+
+#con .cost_info .fields ul.member li span{
+    color:gray;
+    cursor:pointer;
+}
+
+#con .cost_info .fields ul.member li input{
+    text-align: center;
+    border:0px;
+}
+
+li.chongzhi{
+    color:gray;
+    cursor: pointer;
+}
+
+#light{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    display: none;
+}
+
+
+#light .back_wrap{
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+#light .con{
+    width: 604px;
+    height: 456px;
+    overflow: hidden;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+}
+
+#light .con .title{
+    font-size:18px;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+#light .con .yuE,.verify_yuE,.add_admin{
+    display: none;
+    padding-top: 35px;
+    width: 100%;
+    height:100%;
+    background: url(../img/chongzhiback.png) no-repeat;
+}
+
+
+
+
+#light .con p{
+    height:50px;
+    line-height: 50px;
+    width: 526px;
+    margin:0px auto;
+    margin-bottom:11px;
+    color:#0c5d9f;
+    font-size:18px;
+    font-weight: bold;
+    text-indent: 1em;
+    position: relative;
+}
+
+#light .con p.title1{
+    font-size:24px;
+}
+
+#light .con p input{
+    width: 225px;
+    height: 35px;
+    line-height: 32px;
+    background: #c6cad6;
+    box-shadow: 0px 0px 10px gray inset;
+    outline: none;
+    color:#0c5d9f;
+    font-size:18px;
+    text-align: center;
+    /*text-indent: 1em;*/
+}
+
+#light .con p input.verify{
+    width: 102px
+}
+
+#light .con p img{
+    position: absolute;
+    right: 173px;
+    top:5px;
+    cursor: pointer;
+    border:1px solid #bcbcbc;
+}
+
+#light .con p span{
+    color:#fff;
+    background:#0c5d9f;
+    padding: 2px 25px;
+    margin-left:85px;
+    cursor: pointer;
+}
+
+#light .con p.button{
+    padding-top: 20px;
+}
+
+#con .cost_info .fields ul.member li span.undo{
+    color:#000;
+    cursor: unset;
+}
+
+
+

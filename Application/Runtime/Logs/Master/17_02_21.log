@@ -1,0 +1,163 @@
+[ 2017-02-21T00:49:58+08:00 ] 222.212.180.233 /Master/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `admin` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `hospital` WHERE `is_use` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `hospital` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `spending` WHERE `hospital_id` = '10' AND `spending_date` BETWEEN '2017-02-01' AND '2017-02-28'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: sum_money D:\wwwroot\sfwhlryy\wwwroot\Application\Master\Controller\IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money D:\wwwroot\sfwhlryy\wwwroot\Application\Master\Controller\IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money D:\wwwroot\sfwhlryy\wwwroot\Application\Master\Controller\IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money D:\wwwroot\sfwhlryy\wwwroot\Application\Master\Controller\IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money D:\wwwroot\sfwhlryy\wwwroot\Application\Master\Controller\IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money D:\wwwroot\sfwhlryy\wwwroot\Application\Master\Controller\IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money D:\wwwroot\sfwhlryy\wwwroot\Application\Master\Controller\IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money D:\wwwroot\sfwhlryy\wwwroot\Application\Master\Controller\IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money D:\wwwroot\sfwhlryy\wwwroot\Application\Master\Controller\IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money D:\wwwroot\sfwhlryy\wwwroot\Application\Master\Controller\IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money D:\wwwroot\sfwhlryy\wwwroot\Application\Master\Controller\IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money D:\wwwroot\sfwhlryy\wwwroot\Application\Master\Controller\IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money D:\wwwroot\sfwhlryy\wwwroot\Application\Master\Controller\IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money D:\wwwroot\sfwhlryy\wwwroot\Application\Master\Controller\IndexController.class.php 第 35 行.
+SQL: select sum(cost_money) from spending where hospital_id="10" [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: percent D:\wwwroot\sfwhlryy\wwwroot\Application\Master\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: remaining_sum D:\wwwroot\sfwhlryy\wwwroot\Application\Master\Controller\IndexController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `doctor` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `doctor` WHERE `hospital_id` = 10  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: leav D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Master\f9884a4f00f8e32a73c2c1c824d085d3.php 第 65 行.
+NOTIC: [8] Undefined variable: hospital_info D:\wwwroot\sfwhlryy\wwwroot\Application\Runtime\Cache\Master\f9884a4f00f8e32a73c2c1c824d085d3.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-21T00:50:16+08:00 ] 222.212.180.233 /Master/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-21T00:50:16+08:00 ] 222.212.180.233 /Master/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-21T11:25:54+08:00 ] 118.116.86.50 /Master/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-21T11:25:54+08:00 ] 118.116.86.50 /Master/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-21T11:25:54+08:00 ] 118.116.86.50 /index.php/Master/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-21T11:25:58+08:00 ] 111.206.36.15 /Master/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-21T11:26:05+08:00 ] 111.206.36.16 /Master/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-21T11:26:06+08:00 ] 111.206.36.16 /Master/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

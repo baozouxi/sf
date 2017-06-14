@@ -1,0 +1,73 @@
+
+#con .form{
+    height: 667px;
+}
+
+#con .form .form_con{
+    height:600px;
+}
+
+
+.add_admin{
+    /*display: none;*/
+    padding-top: 35px;
+    width: 608px;
+    height:580px;
+    margin: 0px auto;
+    background: url(../img/updateBack.png) no-repeat;
+}
+
+.add_admin p{
+    height:50px;
+    line-height: 50px;
+    width: 526px;
+    margin:0px auto;
+    margin-bottom:11px;
+    color:#0c5d9f;
+    font-size:18px;
+    font-weight: bold;
+    text-indent: 1em;
+    position: relative;
+}
+
+.add_admin p.title1{
+    font-size:24px;
+}
+
+.add_admin p input{
+    width: 225px;
+    height: 35px;
+    line-height: 32px;
+    background: #c6cad6;
+    box-shadow: 0px 0px 10px gray inset;
+    outline: none;
+    color:#0c5d9f;
+    font-size:18px;
+    text-align: center;
+    /*text-indent: 1em;*/
+}
+
+.add_admin p input.verify{
+    width: 102px
+}
+
+.add_admin p img{
+    position: absolute;
+    right: 173px;
+    top:6px;
+    cursor: pointer;
+    border:1px solid #bcbcbc;
+}
+
+.add_admin p span{
+    color:#fff;
+    background:#0c5d9f;
+    padding: 2px 25px;
+    margin-left:165px;
+    cursor: pointer;
+}
+
+.add_admin p.button{
+    padding-top: 20px;
+}
+

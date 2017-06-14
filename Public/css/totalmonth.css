@@ -1,0 +1,10 @@
+.totalImg{
+    width: 100%;
+    height: 88%;
+    overflow: hidden;
+}
+
+.totalImg img{
+    width: 100%;
+    height: 100%;
+}

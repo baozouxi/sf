@@ -1,0 +1,622 @@
+[ 2016-12-23T10:12:33+08:00 ] 127.0.0.1 /Master/Hospital/recharge
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `rechange` [ RunTime:0.0030s ]
+SQL: INSERT INTO `rechange` (`money`,`hospital_id`,`add_admin`) VALUES ('1','4','孙熙') [ RunTime:0.0230s ]
+
+[ 2016-12-23T10:57:06+08:00 ] 127.0.0.1 /Master/Hospital/add_admin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-23T10:59:36+08:00 ] 127.0.0.1 /Master/Hospital/add_admin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-23T11:00:40+08:00 ] 127.0.0.1 /Master/Hospital/add_admin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-23T11:00:59+08:00 ] 127.0.0.1 /Master/Hospital/add_admin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-12-23T11:02:03+08:00 ] 127.0.0.1 /Master/Hospital/add_admin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-23T11:13:41+08:00 ] 127.0.0.1 /Master/Hospital/add_admin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-23T11:13:48+08:00 ] 127.0.0.1 /Master/Hospital/add_admin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-12-23T11:14:46+08:00 ] 127.0.0.1 /Master/Hospital/add_admin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-23T11:14:53+08:00 ] 127.0.0.1 /Master/Hospital/add_admin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-23T11:15:06+08:00 ] 127.0.0.1 /Master/Hospital/add_admin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-23T11:15:37+08:00 ] 127.0.0.1 /Master/Hospital/add_admin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hospital_admin` [ RunTime:0.0020s ]
+SQL: INSERT INTO `hospital_admin` (`name`,`tel`,`hospital_id`) VALUES ('暴走西','13213132123','4') [ RunTime:0.0320s ]
+
+[ 2016-12-23T11:24:56+08:00 ] 127.0.0.1 /Master/hospital/admin_update/stop/id/1
+ERR: 非法操作:admin_update
+
+[ 2016-12-23T14:00:26+08:00 ] 127.0.0.1 /Master/Hospital/add_admin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hospital_admin` [ RunTime:0.0070s ]
+SQL: INSERT INTO `hospital_admin` (`name`,`tel`,`hospital_id`) VALUES ('张三','13225846551','4') [ RunTime:0.0220s ]
+
+[ 2016-12-23T14:13:53+08:00 ] 127.0.0.1 /Master/Hospital/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0030s ]
+SQL: UPDATE `hospital` SET `name`='博爱医院',`intro`='撒打算碍事',`is_use`='0' WHERE `id` = 4 [ RunTime:0.0210s ]
+
+[ 2016-12-23T14:13:57+08:00 ] 127.0.0.1 /Master/Hospital/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0020s ]
+SQL: UPDATE `hospital` SET `name`='博爱医院',`intro`='撒打算碍事',`is_use`='1' WHERE `id` = 4 [ RunTime:0.0200s ]
+
+[ 2016-12-23T14:26:23+08:00 ] 127.0.0.1 /Master/Hospital/update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0010s ]
+SQL: UPDATE `hospital` SET `name`='博爱医院',`intro`='撒打算sadas',`is_use`='1' WHERE `id` = 4 [ RunTime:0.0280s ]
+
+[ 2016-12-23T15:13:25+08:00 ] 127.0.0.1 /Master/Hospital/admin_update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-23T15:13:42+08:00 ] 127.0.0.1 /Master/Hospital/admin_update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-23T15:20:14+08:00 ] 127.0.0.1 /Master/Hospital/admin_update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hospital_admin` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: tel D:\phpStudy\WWW\tp\Application\Master\Controller\HospitalController.class.php 第 369 行.
+SQL: UPDATE `hospital_admin` SET `name`='暴走西1',`tel`='' WHERE `id` = 1 [ RunTime:0.0320s ]
+
+[ 2016-12-23T15:20:40+08:00 ] 127.0.0.1 /Master/Hospital/admin_update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hospital_admin` [ RunTime:0.0020s ]
+SQL: UPDATE `hospital_admin` SET `name`='暴走西1',`tel`='13228595558' WHERE `id` = 1 [ RunTime:0.0420s ]
+
+[ 2016-12-23T15:22:45+08:00 ] 127.0.0.1 /Master/Hospital/admin_update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hospital_admin` [ RunTime:0.0020s ]
+ERR: 1062:Duplicate entry '暴走西1' for key 'name'
+ [ SQL语句 ] : UPDATE `hospital_admin` SET `name`='暴走西1',`tel`='13228595558' WHERE `id` = 2
+ERR: 1062:Duplicate entry '暴走西1' for key 'name'
+ [ SQL语句 ] : UPDATE `hospital_admin` SET `name`='暴走西1',`tel`='13228595558' WHERE `id` = 2
+
+[ 2016-12-23T15:22:54+08:00 ] 127.0.0.1 /Master/Hospital/admin_update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `hospital_admin` [ RunTime:0.0070s ]
+ERR: 1062:Duplicate entry '暴走西1' for key 'name'
+ [ SQL语句 ] : UPDATE `hospital_admin` SET `name`='暴走西1',`tel`='13228595558' WHERE `id` = 2
+ERR: 1062:Duplicate entry '暴走西1' for key 'name'
+ [ SQL语句 ] : UPDATE `hospital_admin` SET `name`='暴走西1',`tel`='13228595558' WHERE `id` = 2
+
+[ 2016-12-23T15:23:39+08:00 ] 127.0.0.1 /Master/Hospital/admin_update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `hospital_admin` [ RunTime:0.0070s ]
+ERR: 1062:Duplicate entry '暴走西1' for key 'name'
+ [ SQL语句 ] : UPDATE `hospital_admin` SET `name`='暴走西1',`tel`='13228595558' WHERE `id` = 2
+ERR: 1062:Duplicate entry '暴走西1' for key 'name'
+ [ SQL语句 ] : UPDATE `hospital_admin` SET `name`='暴走西1',`tel`='13228595558' WHERE `id` = 2
+
+[ 2016-12-23T15:24:17+08:00 ] 127.0.0.1 /Master/Hospital/admin_update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hospital_admin` [ RunTime:0.0080s ]
+SQL: UPDATE `hospital_admin` SET `name`='暴走西2',`tel`='13228595558' WHERE `id` = 1 [ RunTime:0.0410s ]
+
+[ 2016-12-23T15:24:27+08:00 ] 127.0.0.1 /Master/Hospital/admin_update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hospital_admin` [ RunTime:0.0010s ]
+SQL: UPDATE `hospital_admin` SET `name`='暴走西',`tel`='13228595558' WHERE `id` = 1 [ RunTime:0.0780s ]
+
+[ 2016-12-23T15:26:24+08:00 ] 127.0.0.1 /Master/Hospital/admin_update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hospital_admin` [ RunTime:0.0010s ]
+SQL: UPDATE `hospital_admin` SET `name`='暴走西1',`tel`='13228595558' WHERE `id` = 1 [ RunTime:0.0190s ]
+
+[ 2016-12-23T15:26:29+08:00 ] 127.0.0.1 /Master/Hospital/admin_update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hospital_admin` [ RunTime:0.0010s ]
+SQL: UPDATE `hospital_admin` SET `name`='张三1',`tel`='13225846551' WHERE `id` = 2 [ RunTime:0.0310s ]
+
+[ 2016-12-23T16:09:24+08:00 ] 127.0.0.1 /Master/Hospital/update_status
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-23T16:09:33+08:00 ] 127.0.0.1 /Master/Hospital/update_status
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-23T16:11:40+08:00 ] 127.0.0.1 /Master/Hospital/update_status
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-23T16:15:57+08:00 ] 127.0.0.1 /Master/Hospital/update_status
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-23T16:32:45+08:00 ] 127.0.0.1 /Master/Hospital/update_status
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-23T16:32:48+08:00 ] 127.0.0.1 /Master/Hospital/update_status
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `hospital_admin` [ RunTime:0.0030s ]
+SQL: UPDATE `hospital_admin` SET `is_use`='1' WHERE `id` = 1 [ RunTime:0.0280s ]
+
+[ 2016-12-23T16:32:54+08:00 ] 127.0.0.1 /Master/Hospital/update_status
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `hospital_admin` [ RunTime:0.0020s ]
+SQL: UPDATE `hospital_admin` SET `is_use`='0' WHERE `id` = 1 [ RunTime:0.0260s ]
+
+[ 2016-12-23T16:50:38+08:00 ] 127.0.0.1 /Master/Hospital/update_status
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hospital_admin` [ RunTime:0.0020s ]
+SQL: UPDATE `hospital_admin` SET `is_use`='1' WHERE `id` = 1 [ RunTime:0.0386s ]
+
+[ 2016-12-23T16:50:43+08:00 ] 127.0.0.1 /Master/Hospital/update_status
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hospital_admin` [ RunTime:0.0020s ]
+SQL: UPDATE `hospital_admin` SET `is_use`='0' WHERE `id` = 2 [ RunTime:0.0250s ]
+
+[ 2016-12-23T16:52:33+08:00 ] 127.0.0.1 /Master/Hospital/update_status
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hospital_admin` [ RunTime:0.0020s ]
+SQL: UPDATE `hospital_admin` SET `is_use`='1' WHERE `id` = 1 [ RunTime:0.0290s ]
+
+[ 2016-12-23T16:52:35+08:00 ] 127.0.0.1 /Master/Hospital/update_status
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `hospital_admin` [ RunTime:0.0000s ]
+SQL: UPDATE `hospital_admin` SET `is_use`='1' WHERE `id` = 1 [ RunTime:0.0342s ]
+
+[ 2016-12-23T16:52:37+08:00 ] 127.0.0.1 /Master/Hospital/update_status
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hospital_admin` [ RunTime:0.0030s ]
+SQL: UPDATE `hospital_admin` SET `is_use`='1' WHERE `id` = 1 [ RunTime:0.0290s ]
+
+[ 2016-12-23T16:52:39+08:00 ] 127.0.0.1 /Master/Hospital/update_status
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hospital_admin` [ RunTime:0.0020s ]
+SQL: UPDATE `hospital_admin` SET `is_use`='1' WHERE `id` = 1 [ RunTime:0.0330s ]
+
+[ 2016-12-23T16:52:42+08:00 ] 127.0.0.1 /Master/Hospital/update_status
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hospital_admin` [ RunTime:0.0020s ]
+SQL: UPDATE `hospital_admin` SET `is_use`='0' WHERE `id` = 1 [ RunTime:0.0230s ]
+
+[ 2016-12-23T16:52:46+08:00 ] 127.0.0.1 /Master/Hospital/update_status
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `hospital_admin` [ RunTime:0.0030s ]
+SQL: UPDATE `hospital_admin` SET `is_use`='1' WHERE `id` = 1 [ RunTime:0.0380s ]
+
+[ 2016-12-23T16:52:51+08:00 ] 127.0.0.1 /Master/Hospital/update_status
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hospital_admin` [ RunTime:0.0000s ]
+SQL: UPDATE `hospital_admin` SET `is_use`='1' WHERE `id` = 2 [ RunTime:0.0406s ]
+
+[ 2016-12-23T16:54:26+08:00 ] 127.0.0.1 /Master/Index/changeHospital
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `hospital` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-12-23T16:54:27+08:00 ] 127.0.0.1 /Master/Index/changeHospital
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `hospital` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-12-23T16:57:06+08:00 ] 127.0.0.1 /Master/Admin/index
+ERR: 无法加载控制器:Admin
+
+[ 2016-12-23T17:00:07+08:00 ] 127.0.0.1 /Master/Admin/index
+ERR: 模板不存在:./Application/Master/View/Admin/index.html
+
+[ 2016-12-23T17:00:08+08:00 ] 127.0.0.1 /Master/Admin/index
+ERR: 模板不存在:./Application/Master/View/Admin/index.html
+
+[ 2016-12-23T17:00:08+08:00 ] 127.0.0.1 /Master/Admin/index
+ERR: 模板不存在:./Application/Master/View/Admin/index.html
+
+[ 2016-12-23T17:00:08+08:00 ] 127.0.0.1 /Master/Admin/index
+ERR: 模板不存在:./Application/Master/View/Admin/index.html
+
+[ 2016-12-23T17:08:39+08:00 ] 127.0.0.1 /Master/Spending/select
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `spending` WHERE `hospital_id` = 4 AND `spending_date` BETWEEN '2016-12-01' AND '2016-12-31'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: sum_money D:\phpStudy\WWW\tp\Application\Master\Controller\SpendingController.class.php 第 79 行.
+
+[ 2016-12-23T17:10:14+08:00 ] 127.0.0.1 /Master/Index/changeHospital
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `hospital` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-12-23T17:10:14+08:00 ] 127.0.0.1 /Master/Index/changeHospital
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `hospital` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-12-23T17:10:16+08:00 ] 127.0.0.1 /Master/Index/changeHospital
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `hospital` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-12-23T17:10:19+08:00 ] 127.0.0.1 /Master/Index/changeHospital
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `hospital` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-12-23T17:11:12+08:00 ] 127.0.0.1 /Master/Index/changeHospital
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `hospital` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-12-23T17:11:13+08:00 ] 127.0.0.1 /Master/Index/changeHospital
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `hospital` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-12-23T17:11:15+08:00 ] 127.0.0.1 /Master/Index/changeHospital
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `hospital` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-12-23T17:11:16+08:00 ] 127.0.0.1 /Master/Index/changeHospital
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `hospital` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-12-23T17:11:17+08:00 ] 127.0.0.1 /Master/Index/changeHospital
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `hospital` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-12-23T17:31:00+08:00 ] 127.0.0.1 /Master/Admin/addAdmin
+ERR: 非法操作:addAdmin
+
+[ 2016-12-23T19:26:36+08:00 ] 127.0.0.1 /index.php/Master/Admin/addDoctor.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:addDoctor
+
+[ 2016-12-23T19:27:12+08:00 ] 127.0.0.1 /index.php/Master/Admin/addAdminHandle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `doctor` [ RunTime:0.0020s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 54 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 54 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 54 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-23T19:28:06+08:00 ] 127.0.0.1 /index.php/Master/Admin/addAdminHandle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `doctor` [ RunTime:0.0040s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 54 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 54 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 54 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-23T19:30:49+08:00 ] 127.0.0.1 /index.php/Master/Admin/addAdminHandle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `doctor` [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 54 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 54 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 54 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-23T19:31:03+08:00 ] 127.0.0.1 /index.php/Master/Admin/addAdminHandle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `doctor` [ RunTime:0.0020s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 54 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 54 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 54 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-23T19:32:12+08:00 ] 127.0.0.1 /index.php/Master/Admin/addAdminHandle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `doctor` [ RunTime:0.0020s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 54 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 54 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 54 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-23T19:32:48+08:00 ] 127.0.0.1 /index.php/Master/Admin/addAdminHandle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-23T19:33:57+08:00 ] 127.0.0.1 /index.php/Master/Admin/addAdminHandle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-23T19:33:58+08:00 ] 127.0.0.1 /index.php/Master/Admin/addAdminHandle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-23T19:34:10+08:00 ] 127.0.0.1 /index.php/Master/Admin/addAdminHandle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `doctor` [ RunTime:0.0020s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 55 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 55 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-23T19:34:27+08:00 ] 127.0.0.1 /index.php/Master/Admin/addAdminHandle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `doctor` [ RunTime:0.0020s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 55 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 55 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-23T19:34:46+08:00 ] 127.0.0.1 /index.php/Master/Admin/addAdminHandle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-23T19:35:25+08:00 ] 127.0.0.1 /index.php/Master/Admin/addAdminHandle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-23T19:35:35+08:00 ] 127.0.0.1 /index.php/Master/Admin/addAdminHandle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `doctor` [ RunTime:0.0030s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 55 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-12-23T19:35:54+08:00 ] 127.0.0.1 /index.php/Master/Admin/addAdminHandle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `doctor` [ RunTime:0.0020s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 55 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-23T19:36:38+08:00 ] 127.0.0.1 /index.php/Master/Admin/addAdminHandle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0020s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 55 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-23T19:38:33+08:00 ] 127.0.0.1 /index.php/Master/Admin/addAdminHandle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0030s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 54 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-23T19:38:54+08:00 ] 127.0.0.1 /index.php/Master/Admin/addAdminHandle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 54 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-23T19:43:41+08:00 ] 127.0.0.1 /index.php/Master/Admin/addAdminHandle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0040s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 53 行.
+SQL: INSERT INTO `admin` (`name`,`tel`,`username`,`admin_part`) VALUES ('李四','13228595555','','0') [ RunTime:0.0280s ]
+
+[ 2016-12-23T19:49:39+08:00 ] 127.0.0.1 /index.php/Master/Admin/addAdminHandle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0020s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 53 行.
+SQL: INSERT INTO `admin` (`name`,`tel`,`username`,`admin_part`) VALUES ('sadasd','12312313121','asdasdasdas','0') [ RunTime:0.0250s ]
+
+[ 2016-12-23T19:51:13+08:00 ] 127.0.0.1 /index.php/Master/Admin/addAdminHandle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0020s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 53 行.
+ERR: 1062:Duplicate entry 'sadasd' for key 'name'
+ [ SQL语句 ] : INSERT INTO `admin` (`name`,`tel`,`username`,`password`,`admin_part`) VALUES ('sadasd','13213212312','sadas13213','123456','1')
+ERR: 1062:Duplicate entry 'sadasd' for key 'name'
+ [ SQL语句 ] : INSERT INTO `admin` (`name`,`tel`,`username`,`password`,`admin_part`) VALUES ('sadasd','13213212312','sadas13213','123456','1')
+
+[ 2016-12-23T19:51:28+08:00 ] 127.0.0.1 /index.php/Master/Admin/addAdminHandle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 53 行.
+SQL: INSERT INTO `admin` (`name`,`tel`,`username`,`password`,`admin_part`) VALUES ('萨达','13213212312','sadas13213','123456','1') [ RunTime:0.0180s ]
+
+[ 2016-12-23T19:52:09+08:00 ] 127.0.0.1 /index.php/Master/Admin/addAdminHandle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0020s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\tp\Application\Master\Controller\AdminController.class.php 第 53 行.
+SQL: INSERT INTO `admin` (`name`,`tel`,`username`,`password`,`admin_part`) VALUES ('啊实打实的','13213213213','撒打算大','9520943dc26494f8941b','0') [ RunTime:0.0270s ]
+

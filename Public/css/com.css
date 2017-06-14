@@ -1,0 +1,274 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background: #f1f1f1;
+    font-size: 12px;
+    font-family: 'Microsoft YaHei', Verdana, Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color:#666;
+}
+
+@font-face {
+    font-family: mini;
+    src: url(../font/mini.TTF);
+}
+
+
+/*整体页面样式*/
+#body_wrap {
+    width: 1300px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+#body_wrap .sys_msg_tips{
+    min-width: 200px;
+    height: 40px;
+    line-height: 40px;
+    background: rgba(237,28,36,0.8);
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    font-size:15px;
+    display: none;
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+#header .left {
+    float: left;
+    width: 200px;
+    height: 100px;
+    background: url(../img/beijing.jpg);
+    text-align: center;
+    line-height: 100px;
+    color: #002E54;
+    font-size: 20px;
+    font-weight: bold;
+}
+#header .right {
+    float: right;
+    height: 100px;
+    width: 1089px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+#con {
+    width: 100%;
+}
+#con .main_nav {
+    float: left;
+    width: 200px;
+    height: auto;
+    overflow: hidden;
+}
+#con .main_nav .nav_item {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+#con .main_nav .nav_item p {
+    text-align: center;
+    font-size: 17px;
+    color: #fff;
+    background: #0c5d9f;
+    height: 73px;
+    line-height: 73px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#con .main_nav .nav_item ul {
+    display: none;
+}
+
+#con .main_nav .nav_item  p.active{
+    background: url('../img/2.jpg');
+}
+
+#con .main_nav .nav_item ul li {
+    display: block;
+    width: 198px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px dashed #000;
+    border-top: 0px;
+    text-align: center;
+    background: #fff;
+}
+
+
+#con .main_nav .nav_item ul a.active li{
+    background:#E3C098;
+    border-color: #E3C098;
+}
+
+
+#con .main_nav .nav_item ul li:hover {
+    background: #666;
+    color: #fff;
+}
+#con .form {
+    height:620px;
+    margin-top: 3px;
+    margin-right: 1px;
+    width: 1089px;
+    min-height: 500px;
+    float: right;
+    -moz-box-shadow: 0px 0px 10px #666;
+    -webkit-box-shadow: 0px 0px 10px #666;
+    box-shadow: 0px 0px 5px #666;
+}
+#con .form .title {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #666;
+}
+#con .form .title .left {
+    float: left;
+    line-height: 70px;
+    font-size: 13px;
+    text-indent: 2em;
+    cursor: pointer;
+}
+
+#con .form .title .middle {
+    float: left;
+    width: 150px;
+    height: 32px;
+    background-color: #0c5d9f;
+    text-align: center;
+    color:#fff;
+    margin-top:18px;
+    margin-left: 10px;
+}
+#con .form .title .middle p{
+    height: 16px;
+}
+#con .form .title .middle p:first-child{
+    border-bottom: 1px solid #fff;
+}
+
+
+#con .form .title .right {
+    float: right;
+    margin-right: 130px;
+    margin-top: 10px;
+}
+#con .form .title .right .word {
+    line-height: 55px;
+    float: left;
+    font-size: 13px;
+}
+#con .form .title .right .input {
+    float: left;
+    margin-top: 12px;
+    margin-left: 5px;
+}
+#con .form .title .right .input input {
+    width: 100px;
+    background: #0c5d9f;
+    border: 1px solid #bbb;
+    font-size: 14px;
+    color: #333;
+    padding: 7px;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+#con .form .title .right .search {
+    position: relative;
+}
+#con .form .title .right .search span.search_button {
+    position: absolute;
+    top: 8px;
+    right: 58px;
+    display: block;
+    background: url(../img/search_button.png) no-repeat;
+    width: 19px;
+    height: 17px;
+    cursor: pointer;
+}
+#con .form .title .right .search input {
+    margin-right: 50px;
+    text-align: left;
+    text-indent: 1em;
+    width: 120px;
+    cursor: auto;
+}
+#con .form .form_con {
+    width: 100%;
+    height: 535px;
+    overflow: hidden;
+    position: relative;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+#con .form ._button {
+    overflow: hidden;
+    position: absolute;
+    top: 400px;
+    width: 40px;
+    height: 40px;
+    z-index: 99;
+    padding: 5px;
+    padding-left: 0px;
+    overflow: hidden;
+}
+#con .form ._button .hide:hover {
+    background: url(../img/jiantou-01.png) center;
+    background-size: cover;
+}
+#con .form ._button .hide {
+    display: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background: url(../img/jiantou-04.png) center;
+    background-size: cover;
+}
+#con .form ._button .show {
+    background: url(../img/jiantou-02.png) center;
+    background-size: cover;
+}
+#con .form ._button .show:hover {
+    background: url(../img/jiantou-03.png) center;
+    background-size: cover;
+}
+#con .form .form_con .fields {
+    overflow: hidden;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+/*编辑状态*/
+#con li.xuanding{
+    border:1px dashed #0c5d9f;
+}
+
+
+
+
+
+

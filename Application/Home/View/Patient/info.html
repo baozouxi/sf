@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/com.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./css/index.css"> -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/date_input.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/info.css">
+    <!-- <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css"> -->
+    <script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script> -->
+   <!--  <script type="text/javascript" src='js/jquery.min.js'></script> -->
+    <script type="text/javascript" src='__PUBLIC__/js/jquery.date_input.pack.js'></script>
+    <script type="text/javascript" src="__PUBLIC__/js/com.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/info.js"></script>
+    <title>管理首页</title>
+</head>
+<body>
+    <div id="body_wrap">
+
+    <!-- 提示框 -->
+    <div class="sys_msg_tips"></div>
+        <!--头部-->
+        <<include file="Common:head" />
+
+        <!-- 主体 -->
+        <div id="con">
+            <div class="wrap">
+            <!--导航栏部分-->
+                <include file="Common:menu" />
+
+                <!--显示表单部分-->
+                <div class="form">
+                    <div class="title">
+                        <div class="left">当前医院：<a href='/' title='点我返回首页'>{$hospital_name}</a><<span>{$patient.name}</span></div>
+                        <div class="right">
+                        
+                            <!-- 搜索框 
+                            <div class="word">搜索病人：</div>
+                            <div class="input search">
+                                <input value="" type="text" maxlength="5">
+                                <span class="search_button"></span>
+                            </div>-->
+                            <div class="word">选择月份：</div>
+                            <div class="input">
+                                <input value="{$date}" type="text" class="date_input">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--左侧导航隐藏按钮-->
+                    <div class="_button">
+                        <div class="hide"></div>
+                    </div>  
+
+                    <!--内容主体-->
+                    <div class="form_con">
+                        <div class="user_info">
+                            <div class="fields">
+                                <ul>
+                                    <li>入院日期</li>
+                                    <li>姓名</li>
+                                    <li>年龄</li>
+                                    <li>性别</li>
+                                    <li class="type out">病种</li>
+                                    <li>联系方式</li>
+                                    <li>接诊医生</li>
+                                    <li>消费总额</li>
+                                    <li>当前状态</li>
+                                </ul>
+                                <form name='patient'>
+                                <ul class="patient">
+                                    <input type="hidden" name="unique" value="{$unique}">
+                                    <input type="hidden" name="id" value="{$patient.id}">
+                                    <li><input type="text" value="{$patient.hospital_date}" name='hospital_date' readonly="true"></li>
+                                    <li><input type="text" value="{$patient.name}" name='name' ></li>
+                                    <li><input type="text" value="{$patient.age}" name='age' readonly="true"></li>
+                                    <li class='sex'>{$patient.sex}</li>
+                                    <li class='sex_select' style="display: none;">
+                                      <select name="sex" readonly="true">
+                                          <option value="男" {$patient['sex']=='男' ? 'selected="selected"' : '' } >男</option>
+                                          <option value="女" {$patient['sex']=='女' ? 'selected="selected"' : '' } >女</option>
+                                      </select>
+                                    </li>
+                                    <li class="type">{$patient.illness}</li>
+                                    <li class="type_select">
+                                        <select name="illness">
+                                            <volist name='illness' id='ill'>
+                                                <if condition="$key eq $patient['illness']">
+                                                    <option value="{$key}" selected="selected">{$key}</option>
+                                                    
+                                                <else /> <option value="{$key}">{$key}</option>
+                                                </if>
+                                                
+                                            </volist>
+                                        </select>
+
+                                    </li>
+                                    <li><input type="text" value="{$patient.tel}" name='tel' readonly="true"></li>
+                                    <li class="doctor">{$patient['doctor_name']}</li>
+                                    <li class="doctor_select">
+                                        <select name="doctor_name" >
+                                            <option value="">--请选择--</option>
+                                            <volist name='doctor_info' id='doctor'>
+                                                <if condition="$key eq $patient['doctor_name']">
+                                                    <option selected="selected" value="{$patient['doctor_name']}">{$doctor}</option>
+                                                <else /> 
+                                                    <option value="{$key}">{$doctor}</option>
+                                                </if>
+                                            </volist>
+                                        </select>
+                                    </li>
+                                    <li class='sum'>{$sum}</li>
+                                    <li class='status'>{$patient['status']==0 ? '治疗中' : '已出院'}</li>
+                                    <li class='status_select' style="display:none;">
+                                      <select name="status">
+                                        <option value="0" {$patient['status']=='0' ? 'selected="selected"' : '' } >治疗中</option>
+                                        <option value="1" {$patient['status']=='1' ? 'selected="selected"' : '' } >已出院</option>
+                                      </select>
+                                    </li>
+                                </ul>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="cost_info">
+                            <div class="fields">
+                                <ul>
+                                    <li>日期</li>
+                                    <li>消费类型</li>
+                                    <li class="money">消费金额</li>
+                                    <li class="remark">备注</li>
+                                    <li></li>
+                                    <li>消费类型</li>
+                                    <li class="money">消费金额</li>
+                                    <li class="remark">备注</li>
+                                </ul>
+                              <volist name='spending_list' id='item'>
+                                  <ul class="cost" data-id={$item.id}>
+                                     <li>{$item.spending_date}</li>
+                                     <li class="summary"><input type="text" value="{$item.summary}" name="summary" readonly="true"></li>
+                                     <li class="money"><input type="text" value="{$item.cost_money}" name='cost_money' readonly="true"></li>
+                                     <li class="remark"><input type="text" value="{$item.remark}" name='remark' readonly="true"></li>
+                                  </ul>
+                              </volist>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

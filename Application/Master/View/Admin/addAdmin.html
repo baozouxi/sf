@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/com.css">
+    <!-- <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/index.css"> -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/date_input.css">
+    <!-- <link rel="stylesheet" href="css/info.css"> -->
+    <link rel="stylesheet" href="__PUBLIC__/css/addPatient.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/addDoctor.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/jquery.mCustomScrollbar.min.css">
+    <script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery.mCustomScrollbar.js"></script>
+   <!--  <script type="text/javascript" src='js/jquery.min.js'></script> -->
+    <script type="text/javascript" src='__PUBLIC__/js/jquery.date_input.pack.js'></script>
+    <script type="text/javascript" src="__PUBLIC__/js/com.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/addAdmin.js"></script>
+    <title>管理首页</title>
+</head>
+<body>
+    <div id="body_wrap">
+    <!-- 提示框 -->
+    <div class="sys_msg_tips"></div>
+        <!--头部-->
+        <include file="Common:head" />
+        <!-- 主体 -->
+        <div id="con">
+            <div class="wrap">
+            <!--导航栏部分-->
+              <include file="Common:menu" />
+
+                <!--显示表单部分-->
+                <div class="form">
+                    <div class="title">
+                        <div class="left"><a href="/Master/Index/index" title='点我返回首页'>返回首页</a></div>
+                    </div>
+
+                    <!--左侧导航隐藏按钮-->
+                    <div class="_button">
+                        <div class="hide"></div>
+                    </div>  
+                <form action="{:U('addAdminHandle')}" method="post" name="add">                    <!--内容主体-->
+                    <div class="form_con">
+                        <div class="addForm">
+                            <div class="fields">
+                              <ul>
+                                <li>姓名（必填）</li>
+                                <li>手机号码(必填)</li>
+                                <li>用户名(可以为空)</li>
+                                <li>密码(可以为空)</li>
+                                <li>权限</li>
+                              </ul>
+                              <ul class="input">
+                                <input type="hidden" name="unique" value="{$add_form_unique}">
+                                <li><input type="text" name="name[]" class="name"></li>
+                                <li><input type="text" name="tel[]" class="tel" maxlength="11"></li>
+                                <li><input type="text" name="username[]" class="username"></li>
+                                <li><input type="password" name="pass[]" class='password'></li>
+                                <li>
+                                    <select name="admin_part[]">
+                                        <option value="0">普通权限</option>
+                                        <option value="1">管理员</option>
+                                        <option value="1">超级管理员</option>
+                                    </select>
+                                </li>
+                              </ul>
+                            </div>
+                        </div>
+
+                        <div class="button_wrap">
+                          <div class="addButton"></div>
+                        </div>
+                        <div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="submit">
+                        添加管理员
+                        <input type="submit" value="添加">
+                    </div>
+                </form>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

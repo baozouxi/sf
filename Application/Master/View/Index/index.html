@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/com.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/index.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/date_input.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/jquery.mCustomScrollbar.min.css">
+    <script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery.mCustomScrollbar.js"></script>
+   <!--  <script type="text/javascript" src='js/jquery.min.js'></script> -->
+    <script type="text/javascript" src='__PUBLIC__/js/jquery.date_input.pack.js'></script>
+    <script type="text/javascript" src="__PUBLIC__/js/com.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/adminIndex.js"></script>
+    <title>管理首页</title>
+</head>
+<body>
+    <div id="body_wrap">
+
+
+     <!-- 提示框 -->
+    <div class="sys_msg_tips"></div>
+    
+        <!--头部-->
+            <include file="Common:head" />
+
+        <!-- 主体 -->
+        <div id="con">
+            <div class="wrap">
+            <!--导航栏部分-->
+              <include file="Common:menu" />
+
+                <!--显示表单部分-->
+                <div class="form">
+
+                    <div class="title">
+                        <div class="left">选择医院：
+                            <span>
+                                <select name="changeHospital">
+                                    <volist name='hospital_list' id='hospital'>
+                                        <if condition="$hospital.id eq $_SESSION['hospital_id']">
+                                                <option selected="selected" value="{$hospital.id}">{$hospital.name}</option>  
+                                            <else /> 
+                                                <option value="{$hospital.id}">{$hospital.name}</option>  
+                                        </if>
+                                    </volist>
+                                    
+                                </select>
+                            </span>
+                        </div>
+                        <!-- <div class="middle">
+                            <p>剩余金额：<span>{$leav}</span></p>
+                            <p>当前比例：<span>{$hospital_info['percent']*100}%</span></p>
+                        </div> -->
+                        <div class="right">
+
+                            <!-- 筛选病人 -->
+                            <div class="word" style="margin-right: 50px;">
+                                <span class="search_open" style="color: #666; cursor: pointer;">筛选病人</span>
+                            </div>
+
+                         
+
+ 
+                            <!-- 搜索框 -->
+                            <div class="word">搜索病人：</div>
+                            <div class="input search">
+                                <input value="" type="text" maxlength="5">
+                                <span class="search_button"></span>
+                            </div>
+                            <div class="word">月份：</div>
+                            <div class="input">
+                                <input value="{:date('Y-m-d')}" type="text" class="date_input">
+                            </div>
+                        </div>
+
+
+
+                        <form name="search_form">
+                        <input type="hidden" name='unique' value="{$unique}">
+                            <!-- 筛选病人主体 -->
+                        <div class='_search_pro'>
+                            <div class="title">筛选病人</div>
+                          <!--   <p class="item">是否复诊</p>
+                            <div class="circle">
+                                <input type="radio" name='is_back' value="1">是 
+                            
+                                <input type="radio" name='is_back' value="0">否 
+                            </div> -->
+                            <p class="item">选择医生</p>
+                            <div class="circle">
+                                <select name="doctor">
+                                    <option value="">--请选择--</option>
+                                    <volist name="doctors" id='doctor'>
+                                        <option value="{$doctor.name}">{$doctor.name}</option>
+                                    </volist>
+                                </select>
+                            </div>
+
+                            <p class="item">消费区段</p>
+                            <div class="circle">
+                                最小金额：<input type="text" name="cost_least">
+                                最大金额：<input type="text" name="cost_max">
+                            </div>
+                            <div style="clear: both;"></div>
+                            <div class="button">
+                                <span class="search_button">搜索</span>
+                                <span class="search_close">关闭</span>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+
+                    <!--左侧导航隐藏按钮-->
+                    <div class="_button">
+                        <div class="hide"></div>
+                    </div>  
+                    <!--内容主体-->
+                    <div class="form_con">
+
+                        <div class="fields">
+                            <ul>
+                                <li class="first">
+                                    <div class="date_field">日期</div>
+                                    <div class="name_field">姓名</div>
+                                    <div class="diagonal"></div>
+                                </li>
+                                
+                                <volist name='days' id='day'>
+                                <li>{$key+1}</li>
+                                </volist>
+                                
+                                <li class="cost">消费总额</li>
+                            </ul>
+                        </div>
+                        <!-- 唯一标示 -->
+                        <input type="hidden" name="unique"  value="{$unique}">
+
+                        <div class="user_info">
+                        <volist name='spending_list' id='item_info'>
+                            <ul>
+                                <a href="/Master/Patient/info/tel/{$key}"><li>{$item_info.name}</li></a>
+                                
+                                <volist name='item_info.cost' id='patient_info'>
+                                     <li>{$patient_info.cost_money}</li>
+                                </volist>
+                                <li class='cost'>{$item_info.sum_money}</li>
+                            </ul>
+                        </volist>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

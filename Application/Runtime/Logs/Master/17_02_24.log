@@ -1,0 +1,1702 @@
+[ 2017-02-24T15:02:04+08:00 ] 127.0.0.1 /Master/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `proportion` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `rechange` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hospital`  [ RunTime:0.0003s ]
+SQL: SELECT `hospital_id`,`percent` FROM `proportion` WHERE `is_use` = 1  [ RunTime:0.0002s ]
+SQL: SELECT sum(money) as remaining_sum,`hospital_id` FROM `rechange` GROUP BY hospital_id  [ RunTime:0.0002s ]
+ERR: 1055:Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'cost.s.hospital_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+ [ SQL语句 ] : select sum(s.cost_money) as cost_sum,s.percentId,s.hospital_id,p.percent,p.is_use from spending s left join proportion p on s.percentId=p.id  group by s.percentId
+ERR: 1055:Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'cost.s.hospital_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+ [ SQL语句 ] : select sum(s.cost_money) as cost_sum,s.percentId,s.hospital_id,p.percent,p.is_use from spending s left join proportion p on s.percentId=p.id  group by s.percentId
+
+[ 2017-02-24T15:02:28+08:00 ] 127.0.0.1 /Master/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `proportion` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `rechange` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hospital`  [ RunTime:0.0002s ]
+SQL: SELECT `hospital_id`,`percent` FROM `proportion` WHERE `is_use` = 1  [ RunTime:0.0002s ]
+SQL: SELECT sum(money) as remaining_sum,`hospital_id` FROM `rechange` GROUP BY hospital_id  [ RunTime:0.0002s ]
+ERR: 1055:Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'cost.s.hospital_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+ [ SQL语句 ] : select sum(s.cost_money) as cost_sum,s.percentId,s.hospital_id,p.percent,p.is_use from spending s left join proportion p on s.percentId=p.id  group by s.percentId
+ERR: 1055:Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'cost.s.hospital_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+ [ SQL语句 ] : select sum(s.cost_money) as cost_sum,s.percentId,s.hospital_id,p.percent,p.is_use from spending s left join proportion p on s.percentId=p.id  group by s.percentId
+
+[ 2017-02-24T15:02:35+08:00 ] 127.0.0.1 /Master/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `proportion` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `rechange` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hospital`  [ RunTime:0.0003s ]
+SQL: SELECT `hospital_id`,`percent` FROM `proportion` WHERE `is_use` = 1  [ RunTime:0.0003s ]
+SQL: SELECT sum(money) as remaining_sum,`hospital_id` FROM `rechange` GROUP BY hospital_id  [ RunTime:0.0003s ]
+ERR: 1055:Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'cost.s.hospital_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+ [ SQL语句 ] : select sum(s.cost_money) as cost_sum,s.percentId,s.hospital_id,p.percent,p.is_use from spending s left join proportion p on s.percentId=p.id  group by s.percentId
+ERR: 1055:Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'cost.s.hospital_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+ [ SQL语句 ] : select sum(s.cost_money) as cost_sum,s.percentId,s.hospital_id,p.percent,p.is_use from spending s left join proportion p on s.percentId=p.id  group by s.percentId
+
+[ 2017-02-24T15:31:16+08:00 ] 127.0.0.1 /Master/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001165s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `proportion` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `rechange` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `hospital`  [ RunTime:0.0004s ]
+SQL: SELECT `hospital_id`,`percent` FROM `proportion` WHERE `is_use` = 1  [ RunTime:0.0011s ]
+SQL: SELECT sum(money) as remaining_sum,`hospital_id` FROM `rechange` GROUP BY hospital_id  [ RunTime:0.0004s ]
+ERR: 1055:Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'cost.s.hospital_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+ [ SQL语句 ] : select sum(s.cost_money) as cost_sum,s.percentId,s.hospital_id,p.percent,p.is_use from spending s left join proportion p on s.percentId=p.id  group by s.percentId
+ERR: 1055:Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'cost.s.hospital_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+ [ SQL语句 ] : select sum(s.cost_money) as cost_sum,s.percentId,s.hospital_id,p.percent,p.is_use from spending s left join proportion p on s.percentId=p.id  group by s.percentId
+
+[ 2017-02-24T15:31:19+08:00 ] 127.0.0.1 /Master/Hosp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+ERR: 无法加载控制器:Hosp
+
+[ 2017-02-24T15:31:22+08:00 ] 127.0.0.1 /Master
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `admin` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hospital` WHERE `is_use` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hospital` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `spending` WHERE `hospital_id` = '10' AND `spending_date` BETWEEN '2017-02-01' AND '2017-02-28'  [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+SQL: select sum(cost_money) from spending where hospital_id="10" [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: percent /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: remaining_sum /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `doctor` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `doctor` WHERE `hospital_id` = 10  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Undefined variable: leav /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/f9884a4f00f8e32a73c2c1c824d085d3.php 第 65 行.
+NOTIC: [8] Undefined variable: hospital_info /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/f9884a4f00f8e32a73c2c1c824d085d3.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027533s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000414s ]
+
+[ 2017-02-24T15:31:25+08:00 ] 127.0.0.1 /Master/Spending/totalDay
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined variable: date /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 75 行.
+NOTIC: [8] Undefined variable: list_data /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000304s ]
+
+[ 2017-02-24T15:31:26+08:00 ] 127.0.0.1 /Master/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hospital` WHERE `is_use` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hospital` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `spending` WHERE `hospital_id` = '10' AND `spending_date` BETWEEN '2017-02-01' AND '2017-02-28'  [ RunTime:0.0022s ]
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+SQL: select sum(cost_money) from spending where hospital_id="10" [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: percent /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: remaining_sum /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `doctor` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `doctor` WHERE `hospital_id` = 10  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined variable: leav /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/f9884a4f00f8e32a73c2c1c824d085d3.php 第 65 行.
+NOTIC: [8] Undefined variable: hospital_info /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/f9884a4f00f8e32a73c2c1c824d085d3.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010089s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000583s ]
+
+[ 2017-02-24T15:31:28+08:00 ] 127.0.0.1 /Master/Spending/totalDay
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined variable: date /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 75 行.
+NOTIC: [8] Undefined variable: list_data /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000399s ]
+
+[ 2017-02-24T15:31:30+08:00 ] 127.0.0.1 /Master/Spending/totalMonth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined variable: date /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 74 行.
+NOTIC: [8] Undefined variable: list_data /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008407s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000273s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000299s ]
+
+[ 2017-02-24T15:31:32+08:00 ] 127.0.0.1 /Master/Spending/totalYear
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Undefined variable: date /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/2da3a7021afd74d7bd9f2de6378aaa26.php 第 74 行.
+NOTIC: [8] Undefined variable: list_data /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/2da3a7021afd74d7bd9f2de6378aaa26.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012422s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000295s ]
+
+[ 2017-02-24T15:31:33+08:00 ] 127.0.0.1 /Master/Spending/totalDay
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000279s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+NOTIC: [8] Undefined variable: date /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 75 行.
+NOTIC: [8] Undefined variable: list_data /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006559s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000256s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000279s ]
+
+[ 2017-02-24T15:31:34+08:00 ] 127.0.0.1 /Master/Spending/totalDay
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000265s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Undefined variable: date /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 75 行.
+NOTIC: [8] Undefined variable: list_data /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007245s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007276s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2017-02-24T15:31:35+08:00 ] 127.0.0.1 /Master/Spending/totalMonth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000286s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined variable: date /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 74 行.
+NOTIC: [8] Undefined variable: list_data /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000435s ]
+
+[ 2017-02-24T15:33:13+08:00 ] 127.0.0.1 /Master/Spending/totalMonth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: hospital_id /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 280 行.
+SQL: SELECT * FROM `spending` INNER JOIN patient ON patient_tel = patient.tel  WHERE patient.hospital_id = null AND `spending_date` BETWEEN '2017-02-01' AND '2017-02-28'  [ RunTime:0.0004s ]
+
+[ 2017-02-24T15:33:56+08:00 ] 127.0.0.1 /Master/Spending/totalMonth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000276s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: hospital_id /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 282 行.
+SQL: SELECT * FROM `spending` INNER JOIN patient ON patient_tel = patient.tel  WHERE patient.hospital_id = null AND `spending_date` BETWEEN '2017-02-01' AND '2017-02-28'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008499s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008551s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002496s ]
+
+[ 2017-02-24T15:33:59+08:00 ] 127.0.0.1 /Master/Spending/totalDay
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: hospital_id /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 241 行.
+SQL: SELECT * FROM `spending` INNER JOIN patient ON patient.tel = patient_tel  WHERE patient.hospital_id = null AND `spending_date` = '2017-02-24'  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: cost /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 257 行.
+NOTIC: [2] max(): When only one parameter is given, it must be an array /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 257 行.
+NOTIC: [8] Undefined variable: cost /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 258 行.
+NOTIC: [2] min(): When only one parameter is given, it must be an array /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 258 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 78 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 81 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 78 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007411s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000491s ]
+
+[ 2017-02-24T15:34:00+08:00 ] 127.0.0.1 /Master/Spending/totalYear
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: hospital_id /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 207 行.
+SQL: SELECT * FROM `spending` WHERE `hospital_id` = null AND `spending_date` BETWEEN '2017-01-01' AND '2017-12-31'  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: month /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 220 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 220 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 224 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/2da3a7021afd74d7bd9f2de6378aaa26.php 第 77 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/2da3a7021afd74d7bd9f2de6378aaa26.php 第 77 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/2da3a7021afd74d7bd9f2de6378aaa26.php 第 80 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000525s ]
+
+[ 2017-02-24T15:34:04+08:00 ] 127.0.0.1 /Master/Spending/totalDay
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: hospital_id /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 241 行.
+SQL: SELECT * FROM `spending` INNER JOIN patient ON patient.tel = patient_tel  WHERE patient.hospital_id = null AND `spending_date` = '2017-02-24'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: cost /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 257 行.
+NOTIC: [2] max(): When only one parameter is given, it must be an array /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 257 行.
+NOTIC: [8] Undefined variable: cost /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 258 行.
+NOTIC: [2] min(): When only one parameter is given, it must be an array /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 258 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 78 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 81 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 78 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007266s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000268s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000293s ]
+
+[ 2017-02-24T15:34:05+08:00 ] 127.0.0.1 /Master/Spending/totalMonth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: hospital_id /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 282 行.
+SQL: SELECT * FROM `spending` INNER JOIN patient ON patient_tel = patient.tel  WHERE patient.hospital_id = null AND `spending_date` BETWEEN '2017-02-01' AND '2017-02-28'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006782s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000284s ]
+
+[ 2017-02-24T15:35:33+08:00 ] 127.0.0.1 /Master/Spending/totalMonth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000276s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `spending` INNER JOIN patient ON patient_tel = patient.tel  WHERE patient.hospital_id = '10' AND `spending_date` BETWEEN '2017-02-01' AND '2017-02-28'  [ RunTime:0.0027s ]
+NOTIC: [8] Undefined index: 总额 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 289 行.
+NOTIC: [8] Undefined index: 消费总额 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 289 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 289 行.
+NOTIC: [8] Undefined index: 日期 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: 2017-02-01 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: 病种 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: 萨达是 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: 2017-02-02 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: 2017-02-03 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: 2017-02-04 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: 2017-02-05 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: 2017-02-06 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: 2017-02-07 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: 2017-02-08 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: 2017-02-09 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: 2017-02-10 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: 2017-02-11 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 294 行.
+NOTIC: [8] Undefined index: 2017-02-12 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: 2017-02-13 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 294 行.
+NOTIC: [8] Undefined index: 2017-02-14 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: 2017-02-15 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: 2017-02-16 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: 2017-02-17 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: 2017-02-18 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: 2017-02-19 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: 2017-02-20 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: 2017-02-21 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: 2017-02-22 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: 2017-02-23 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: 2017-02-24 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: 2017-02-25 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: 2017-02-26 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: 2017-02-27 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: 2017-02-28 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 290 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 294 行.
+NOTIC: [8] Undefined index: 测试1 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: asdas /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: 撒打开好几款 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index:  /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: 啊实打实 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 294 行.
+NOTIC: [8] Undefined index: asdasasd /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 294 行.
+NOTIC: [8] Undefined index: 傻傻的萨打死 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 291 行.
+
+[ 2017-02-24T15:36:04+08:00 ] 127.0.0.1 /Master/Spending/totalMonth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `spending` INNER JOIN patient ON patient_tel = patient.tel  WHERE patient.hospital_id = '10' AND `spending_date` BETWEEN '2017-02-01' AND '2017-02-28'  [ RunTime:0.0047s ]
+NOTIC: [8] Undefined index: 总额 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: 消费总额 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: 日期 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-01 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 病种 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: 萨达是 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: 2017-02-02 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-03 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-04 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-05 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-06 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-07 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-08 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-09 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-10 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-11 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 295 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 296 行.
+NOTIC: [8] Undefined index: 2017-02-12 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-13 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 296 行.
+NOTIC: [8] Undefined index: 2017-02-14 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-15 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-16 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-17 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-18 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-19 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-20 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-21 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-22 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-23 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-24 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-25 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-26 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-27 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-28 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 296 行.
+NOTIC: [8] Undefined index: 测试1 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: asdas /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: 撒打开好几款 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 295 行.
+NOTIC: [8] Undefined index:  /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: 啊实打实 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 295 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 296 行.
+NOTIC: [8] Undefined index: asdasasd /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 295 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 296 行.
+NOTIC: [8] Undefined index: 傻傻的萨打死 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 293 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012664s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012700s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000950s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001045s ]
+
+[ 2017-02-24T15:36:11+08:00 ] 127.0.0.1 /Master/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `admin` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hospital` WHERE `is_use` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hospital` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `spending` WHERE `hospital_id` = '10' AND `spending_date` BETWEEN '2017-02-01' AND '2017-02-28'  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+SQL: select sum(cost_money) from spending where hospital_id="10" [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: percent /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: remaining_sum /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `doctor` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `doctor` WHERE `hospital_id` = 10  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined variable: leav /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/f9884a4f00f8e32a73c2c1c824d085d3.php 第 65 行.
+NOTIC: [8] Undefined variable: hospital_info /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/f9884a4f00f8e32a73c2c1c824d085d3.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000617s ]
+
+[ 2017-02-24T15:36:13+08:00 ] 127.0.0.1 /Master/Index/changeHospital
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hospital` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-02-24T15:36:13+08:00 ] 127.0.0.1 /Master/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hospital` WHERE `is_use` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hospital` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `spending` WHERE `hospital_id` = '11' AND `spending_date` BETWEEN '2017-02-01' AND '2017-02-28'  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+SQL: select sum(cost_money) from spending where hospital_id="11" [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: percent /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: remaining_sum /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `doctor` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `doctor` WHERE `hospital_id` = 11  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined variable: leav /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/f9884a4f00f8e32a73c2c1c824d085d3.php 第 65 行.
+NOTIC: [8] Undefined variable: hospital_info /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/f9884a4f00f8e32a73c2c1c824d085d3.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009245s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009278s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2017-02-24T15:36:15+08:00 ] 127.0.0.1 /Master/Spending/totalDay
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `spending` INNER JOIN patient ON patient.tel = patient_tel  WHERE patient.hospital_id = '11' AND `spending_date` = '2017-02-24'  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: 总额 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 248 行.
+NOTIC: [8] Undefined index: 消费总额 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 248 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 248 行.
+NOTIC: [8] Undefined variable: cost /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 257 行.
+NOTIC: [2] max(): When only one parameter is given, it must be an array /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 257 行.
+NOTIC: [8] Undefined variable: cost /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 258 行.
+NOTIC: [2] min(): When only one parameter is given, it must be an array /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 258 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 78 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 81 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 78 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 81 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 78 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007407s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000291s ]
+
+[ 2017-02-24T15:36:18+08:00 ] 127.0.0.1 /Master/Spending/totalDay
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `spending` INNER JOIN patient ON patient.tel = patient_tel  WHERE patient.hospital_id = '11' AND `spending_date` = '2017-02-24'  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: 总额 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 248 行.
+NOTIC: [8] Undefined index: 消费总额 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 248 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 248 行.
+NOTIC: [8] Undefined variable: cost /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 257 行.
+NOTIC: [2] max(): When only one parameter is given, it must be an array /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 257 行.
+NOTIC: [8] Undefined variable: cost /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 258 行.
+NOTIC: [2] min(): When only one parameter is given, it must be an array /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 258 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 78 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 81 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 78 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 81 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 78 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007567s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000320s ]
+
+[ 2017-02-24T15:36:19+08:00 ] 127.0.0.1 /Master/Spending/totalMonth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `spending` INNER JOIN patient ON patient_tel = patient.tel  WHERE patient.hospital_id = '11' AND `spending_date` BETWEEN '2017-02-01' AND '2017-02-28'  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: 总额 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: 消费总额 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: 日期 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-01 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 病种 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: 萨达是 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: 2017-02-02 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-03 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-04 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-05 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-06 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-07 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-08 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-09 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-10 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-11 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-12 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-13 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-14 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-15 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-16 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-17 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-18 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-19 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-20 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-21 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-22 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-23 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-24 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-25 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-26 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-27 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-28 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008978s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000997s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001267s ]
+
+[ 2017-02-24T15:36:25+08:00 ] 127.0.0.1 /Master/Spending/totalYear
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `spending` WHERE `hospital_id` = 11 AND `spending_date` BETWEEN '2017-01-01' AND '2017-12-31'  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: 总额 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 消费总额 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 214 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 月份 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 215 行.
+NOTIC: [8] Undefined index: 2017-01 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 215 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 215 行.
+NOTIC: [8] Undefined index: 2017-02 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 215 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 215 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 221 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/2da3a7021afd74d7bd9f2de6378aaa26.php 第 80 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000268s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000293s ]
+
+[ 2017-02-24T15:36:31+08:00 ] 127.0.0.1 /Master/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hospital` WHERE `is_use` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hospital` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `spending` WHERE `hospital_id` = '11' AND `spending_date` BETWEEN '2017-02-01' AND '2017-02-28'  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+SQL: select sum(cost_money) from spending where hospital_id="11" [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: percent /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: remaining_sum /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `doctor` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `doctor` WHERE `hospital_id` = 11  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined variable: leav /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/f9884a4f00f8e32a73c2c1c824d085d3.php 第 65 行.
+NOTIC: [8] Undefined variable: hospital_info /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/f9884a4f00f8e32a73c2c1c824d085d3.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009723s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009758s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2017-02-24T15:36:37+08:00 ] 127.0.0.1 /Master/Spending/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `spending` WHERE `hospital_id` = 11 AND `spending_date` BETWEEN '2017-01-01' AND '2017-01-31'  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 82 行.
+
+[ 2017-02-24T15:36:39+08:00 ] 127.0.0.1 /Master/Patient/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `doctor` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `illness` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `illness` WHERE `hospital_id` = 11  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `doctor` WHERE `hospital_id` = 11  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008202s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000407s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000441s ]
+
+[ 2017-02-24T15:36:41+08:00 ] 127.0.0.1 /Master/Spending/totalDay
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `spending` INNER JOIN patient ON patient.tel = patient_tel  WHERE patient.hospital_id = '11' AND `spending_date` = '2017-02-24'  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: 总额 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 248 行.
+NOTIC: [8] Undefined index: 消费总额 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 248 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 248 行.
+NOTIC: [8] Undefined variable: cost /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 257 行.
+NOTIC: [2] max(): When only one parameter is given, it must be an array /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 257 行.
+NOTIC: [8] Undefined variable: cost /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 258 行.
+NOTIC: [2] min(): When only one parameter is given, it must be an array /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 258 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 78 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 81 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 78 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 81 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 78 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007711s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000291s ]
+
+[ 2017-02-24T15:36:42+08:00 ] 127.0.0.1 /Master/Spending/totalYear
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000276s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `spending` WHERE `hospital_id` = 11 AND `spending_date` BETWEEN '2017-01-01' AND '2017-12-31'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: 总额 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 消费总额 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 214 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 月份 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 215 行.
+NOTIC: [8] Undefined index: 2017-01 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 215 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 215 行.
+NOTIC: [8] Undefined index: 2017-02 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 215 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 215 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 221 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/2da3a7021afd74d7bd9f2de6378aaa26.php 第 80 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007529s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000277s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000304s ]
+
+[ 2017-02-24T15:36:46+08:00 ] 127.0.0.1 /Master/Spending/totalMonth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000265s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `spending` INNER JOIN patient ON patient_tel = patient.tel  WHERE patient.hospital_id = '11' AND `spending_date` BETWEEN '2017-02-01' AND '2017-02-28'  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: 总额 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: 消费总额 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 291 行.
+NOTIC: [8] Undefined index: 日期 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-01 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 病种 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: 萨达是 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 293 行.
+NOTIC: [8] Undefined index: 2017-02-02 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-03 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-04 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-05 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-06 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-07 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-08 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-09 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-10 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-11 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-12 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-13 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-14 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-15 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-16 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-17 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-18 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-19 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-20 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-21 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-22 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-23 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-24 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-25 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-26 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-27 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: 2017-02-28 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 292 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 77 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/35e118e87fe0f0910faab14dea809f7d.php 第 80 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007786s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007815s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000398s ]
+
+[ 2017-02-24T15:36:47+08:00 ] 127.0.0.1 /Master/Spending/totalDay
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `spending` INNER JOIN patient ON patient.tel = patient_tel  WHERE patient.hospital_id = '11' AND `spending_date` = '2017-02-24'  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: 总额 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 248 行.
+NOTIC: [8] Undefined index: 消费总额 /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 248 行.
+NOTIC: [8] Undefined index: money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 248 行.
+NOTIC: [8] Undefined variable: cost /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 257 行.
+NOTIC: [2] max(): When only one parameter is given, it must be an array /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 257 行.
+NOTIC: [8] Undefined variable: cost /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 258 行.
+NOTIC: [2] min(): When only one parameter is given, it must be an array /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/SpendingController.class.php 第 258 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 78 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 81 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 78 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 81 行.
+NOTIC: [2] Division by zero /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 78 行.
+NOTIC: [8] Undefined index: count /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/b26fee9b9798bdb1197ee42cd892693f.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007419s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2017-02-24T15:36:54+08:00 ] 127.0.0.1 /Master/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `proportion` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rechange` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hospital`  [ RunTime:0.0002s ]
+SQL: SELECT `hospital_id`,`percent` FROM `proportion` WHERE `is_use` = 1  [ RunTime:0.0002s ]
+SQL: SELECT sum(money) as remaining_sum,`hospital_id` FROM `rechange` GROUP BY hospital_id  [ RunTime:0.0002s ]
+ERR: 1055:Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'cost.s.hospital_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+ [ SQL语句 ] : select sum(s.cost_money) as cost_sum,s.percentId,s.hospital_id,p.percent,p.is_use from spending s left join proportion p on s.percentId=p.id  group by s.percentId
+ERR: 1055:Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'cost.s.hospital_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+ [ SQL语句 ] : select sum(s.cost_money) as cost_sum,s.percentId,s.hospital_id,p.percent,p.is_use from spending s left join proportion p on s.percentId=p.id  group by s.percentId
+
+[ 2017-02-24T15:38:01+08:00 ] 127.0.0.1 /Master/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `proportion` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `rechange` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `hospital`  [ RunTime:0.0003s ]
+SQL: SELECT `hospital_id`,`percent` FROM `proportion` WHERE `is_use` = 1  [ RunTime:0.0002s ]
+SQL: SELECT sum(money) as remaining_sum,`hospital_id` FROM `rechange` GROUP BY hospital_id  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: cost_info /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/HospitalController.class.php 第 26 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/HospitalController.class.php 第 26 行.
+NOTIC: [8] Undefined variable: res /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/HospitalController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: res /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/HospitalController.class.php 第 36 行.
+NOTIC: [8] Undefined variable: percent /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/HospitalController.class.php 第 37 行.
+NOTIC: [8] Undefined variable: res /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/HospitalController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: res /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/HospitalController.class.php 第 36 行.
+NOTIC: [8] Undefined variable: percent /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/HospitalController.class.php 第 37 行.
+NOTIC: [8] Undefined variable: res /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/HospitalController.class.php 第 43 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Undefined variable: add_form_unique /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/6444b16e41eda0c2fb4d1429df4ad96d.php 第 74 行.
+NOTIC: [8] Undefined variable: add_form_unique /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/6444b16e41eda0c2fb4d1429df4ad96d.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013637s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013671s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000276s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000302s ]
+
+[ 2017-02-24T15:38:33+08:00 ] 127.0.0.1 /Master/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `proportion` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `rechange` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hospital`  [ RunTime:0.0003s ]
+SQL: SELECT `hospital_id`,`percent` FROM `proportion` WHERE `is_use` = 1  [ RunTime:0.0002s ]
+SQL: SELECT sum(money) as remaining_sum,`hospital_id` FROM `rechange` GROUP BY hospital_id  [ RunTime:0.0002s ]
+ERR: 1055:Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'cost.s.hospital_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+ [ SQL语句 ] : select sum(s.cost_money) as cost_sum,s.percentId,s.hospital_id,p.percent,p.is_use from spending as s left join proportion as p on s.percentId=p.id  group by s.percentId
+ERR: 1055:Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'cost.s.hospital_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+ [ SQL语句 ] : select sum(s.cost_money) as cost_sum,s.percentId,s.hospital_id,p.percent,p.is_use from spending as s left join proportion as p on s.percentId=p.id  group by s.percentId
+
+[ 2017-02-24T15:39:15+08:00 ] 127.0.0.1 /Master/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001059s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `proportion` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `rechange` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hospital`  [ RunTime:0.0002s ]
+SQL: SELECT `hospital_id`,`percent` FROM `proportion` WHERE `is_use` = 1  [ RunTime:0.0002s ]
+SQL: SELECT sum(money) as remaining_sum,`hospital_id` FROM `rechange` GROUP BY hospital_id  [ RunTime:0.0003s ]
+ERR: 1055:Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'cost.s.hospital_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+ [ SQL语句 ] : select sum(s.cost_money) as cost_sum,s.percentId,s.hospital_id,p.percent,p.is_use from spending as s left join proportion as p on s.percentId=p.id group by percentId
+ERR: 1055:Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'cost.s.hospital_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+ [ SQL语句 ] : select sum(s.cost_money) as cost_sum,s.percentId,s.hospital_id,p.percent,p.is_use from spending as s left join proportion as p on s.percentId=p.id group by percentId
+
+[ 2017-02-24T15:39:16+08:00 ] 127.0.0.1 /Master/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `proportion` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `rechange` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hospital`  [ RunTime:0.0004s ]
+SQL: SELECT `hospital_id`,`percent` FROM `proportion` WHERE `is_use` = 1  [ RunTime:0.0003s ]
+SQL: SELECT sum(money) as remaining_sum,`hospital_id` FROM `rechange` GROUP BY hospital_id  [ RunTime:0.0002s ]
+ERR: 1055:Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'cost.s.hospital_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+ [ SQL语句 ] : select sum(s.cost_money) as cost_sum,s.percentId,s.hospital_id,p.percent,p.is_use from spending as s left join proportion as p on s.percentId=p.id group by percentId
+ERR: 1055:Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'cost.s.hospital_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+ [ SQL语句 ] : select sum(s.cost_money) as cost_sum,s.percentId,s.hospital_id,p.percent,p.is_use from spending as s left join proportion as p on s.percentId=p.id group by percentId
+
+[ 2017-02-24T16:00:48+08:00 ] 127.0.0.1 /Master/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000396s ]
+
+[ 2017-02-24T16:00:48+08:00 ] 127.0.0.1 /index.php/Master/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+
+[ 2017-02-24T16:00:48+08:00 ] 127.0.0.1 /index.php/Master/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+
+[ 2017-02-24T16:00:53+08:00 ] 127.0.0.1 /index.php/Master/Login/checkUser.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0062s ]
+NOTIC: [8] Use of undefined constant tel - assumed 'tel' /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/LoginController.class.php 第 61 行.
+SQL: SELECT * FROM `admin` WHERE `tel` = '13228595558' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-02-24T16:02:29+08:00 ] 127.0.0.1 /Master/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005063s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005113s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000564s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000614s ]
+
+[ 2017-02-24T16:02:29+08:00 ] 127.0.0.1 /index.php/Master/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+
+[ 2017-02-24T16:02:30+08:00 ] 127.0.0.1 /index.php/Master/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+
+[ 2017-02-24T16:02:30+08:00 ] 127.0.0.1 /index.php/Master/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+
+[ 2017-02-24T16:02:34+08:00 ] 127.0.0.1 /index.php/Master/Login/checkUser.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant tel - assumed 'tel' /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/LoginController.class.php 第 61 行.
+SQL: SELECT * FROM `admin` WHERE `tel` = '13228595558' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: errMsg /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/LoginController.class.php 第 71 行.
+
+[ 2017-02-24T16:03:16+08:00 ] 127.0.0.1 /Master/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000525s ]
+
+[ 2017-02-24T16:03:16+08:00 ] 127.0.0.1 /index.php/Master/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+
+[ 2017-02-24T16:03:16+08:00 ] 127.0.0.1 /index.php/Master/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+
+[ 2017-02-24T16:03:16+08:00 ] 127.0.0.1 /index.php/Master/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+
+[ 2017-02-24T16:03:20+08:00 ] 127.0.0.1 /index.php/Master/Login/checkUser.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant tel - assumed 'tel' /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/LoginController.class.php 第 61 行.
+SQL: SELECT * FROM `admin` WHERE `tel` = '13228595558' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: errMsg /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/LoginController.class.php 第 71 行.
+
+[ 2017-02-24T16:05:18+08:00 ] 127.0.0.1 /Master/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000289s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `admin` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hospital` WHERE `is_use` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hospital` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `spending` WHERE `hospital_id` = '11' AND `spending_date` BETWEEN '2017-02-01' AND '2017-02-28'  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: sum_money /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 35 行.
+SQL: select sum(cost_money) from spending where hospital_id="11" [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: percent /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: remaining_sum /Users/sx-pc/Documents/WWW/sf/Application/Master/Controller/IndexController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `doctor` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `doctor` WHERE `hospital_id` = 11  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Undefined variable: leav /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/f9884a4f00f8e32a73c2c1c824d085d3.php 第 65 行.
+NOTIC: [8] Undefined variable: hospital_info /Users/sx-pc/Documents/WWW/sf/Application/Runtime/Cache/Master/f9884a4f00f8e32a73c2c1c824d085d3.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000364s ]
+
+[ 2017-02-24T16:05:21+08:00 ] 127.0.0.1 /Master/Hospital/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `spending` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `proportion` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `rechange` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hospital`  [ RunTime:0.0003s ]
+SQL: SELECT `hospital_id`,`percent` FROM `proportion` WHERE `is_use` = 1  [ RunTime:0.0002s ]
+SQL: SELECT sum(money) as remaining_sum,`hospital_id` FROM `rechange` GROUP BY hospital_id  [ RunTime:0.0002s ]
+ERR: 1055:Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'cost.s.hospital_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+ [ SQL语句 ] : select sum(s.cost_money) as cost_sum,s.percentId,s.hospital_id,p.percent,p.is_use from spending as s left join proportion as p on s.percentId=p.id group by s.percentId
+ERR: 1055:Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'cost.s.hospital_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+ [ SQL语句 ] : select sum(s.cost_money) as cost_sum,s.percentId,s.hospital_id,p.percent,p.is_use from spending as s left join proportion as p on s.percentId=p.id group by s.percentId
+
