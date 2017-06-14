@@ -158,6 +158,7 @@ class LoginController extends Controller
                 $this->ajaxReturn(array(
                     'status' => 'ok',
                     'msgUnique' => $unique,
+                    'code' => $code,
                 ));
             }else{
                 $this->ajaxReturn(array(
@@ -187,6 +188,7 @@ class LoginController extends Controller
     //短信接口
     private function sms($tel, $msg)
     {
+        return true;
 		$statusStr = array(
 		"0" => "短信发送成功",
 		"-1" => "参数不全",

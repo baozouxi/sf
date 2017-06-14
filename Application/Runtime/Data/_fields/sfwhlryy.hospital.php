@@ -1,1 +1,0 @@
-a:8:{i:0;s:2:"id";i:1;s:4:"name";i:2;s:5:"intro";i:3;s:12:"add_datetime";i:4;s:9:"add_admin";i:5;s:6:"is_use";s:3:"_pk";s:2:"id";s:5:"_type";a:6:{s:2:"id";s:16:"int(10) unsigned";s:4:"name";s:12:"varchar(255)";s:5:"intro";s:4:"text";s:12:"add_datetime";s:9:"timestamp";s:9:"add_admin";s:11:"varchar(30)";s:6:"is_use";s:10:"tinyint(4)";}}

@@ -1,3 +1,0 @@
-[ 2016-12-25T13:55:02+08:00 ] 127.0.0.1 /
-ERR: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
-
